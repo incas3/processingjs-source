@@ -10,7 +10,7 @@
 
 ***/
 var window = {};
-var document = {};
+//var document = document || {};
 (function(window, document, Math, undef) {
   var nop = function() {};
   var debug = function() {
