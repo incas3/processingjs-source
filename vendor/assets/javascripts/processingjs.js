@@ -9,7 +9,9 @@
     http://processingjs.org
 
 ***/
-var window = {};
+if (window == undefined) {
+    var window = {};
+}
 //var document = document || {};
 (function(window, document, Math, undef) {
   var nop = function() {};
