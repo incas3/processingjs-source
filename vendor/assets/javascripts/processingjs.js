@@ -9,8 +9,10 @@
     http://processingjs.org
 
 ***/
-if (window == undefined) {
-    var window = {};
+
+if (typeof window != 'object') {
+ //   var window={};
+ window = (function() { return this }).call(null);
 }
 //var document = document || {};
 (function(window, document, Math, undef) {
